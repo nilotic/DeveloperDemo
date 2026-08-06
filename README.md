@@ -2,16 +2,6 @@
 
 A standalone demo app built from an in-app developer menu.
 
-* No external dependencies — no SPM, CocoaPods, or Tuist.
-* Open `DeveloperDemo.xcodeproj` and run.
-* Minimum deployment target: iOS 17.0
-
-```
-open DeveloperDemo.xcodeproj
-```
-
-The interface is localized in Korean.
-
 ## Overview
 
 The app has two tabs, Home and More. The developer menu lives under **More → Developer**.
@@ -29,6 +19,9 @@ Home is a placeholder screen.
 
 Three screens need third-party SDKs and ship as placeholders instead: social account
 information, seasonal event, and feature flags. See `DeveloperDemo/Developer/Placeholder/`.
+
+Hosts and endpoints on the network-backed screens — account lock, account deletion,
+email allowlist, and remote push — are placeholder values and do not resolve.
 
 ## Layout
 
@@ -57,8 +50,3 @@ ruby scripts/generate_project.rb   # requires the xcodeproj gem
 
 `DeveloperDemo/DesignSystem/Colors.swift` is generated. Rerun `scripts/gen_colors.py`
 instead of editing it by hand.
-
-## Notes
-
-Hosts and endpoints on the network-backed screens — account lock, account deletion,
-email allowlist, and remote push — are placeholder values and do not resolve.
